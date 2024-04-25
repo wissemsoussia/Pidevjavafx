@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="500.0" style="-fx-background-color: white" stylesheets="@./MainStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pidev.controllers.LoginController">
+
+    <Button layoutX="110.0" layoutY="230.0" mnemonicParsing="false" onAction="#front" styleClass="success-button" text="Front" textFill="WHITE" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="90.79999999999995">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </Button>
+
+    <Button layoutX="110.0" layoutY="293.0" mnemonicParsing="false" onAction="#back" styleClass="success-button" text="Back" textFill="WHITE" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="90.79999999999995">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </Button>
+</AnchorPane>
