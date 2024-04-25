@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminController">
+    <children>
+        <TableView fx:id="tableviewUser" layoutX="30.0" layoutY="30.0" prefHeight="340.0" prefWidth="1300.0">
+            <columns>
+                <TableColumn fx:id="colid" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="colNom" prefWidth="100.0" text="Nom" />
+                <TableColumn fx:id="colPrenom" prefWidth="100.0" text="Prénom" />
+                <TableColumn fx:id="colEmail" prefWidth="150.0" text="Email" />
+                <TableColumn fx:id="colDateNaissance" prefWidth="120.0" text="Date de Naissance" />
+                <TableColumn fx:id="colNumeroTelephone" prefWidth="120.0" text="Numéro de Téléphone" />
+                <TableColumn fx:id="colRole" prefWidth="100.0" text="Rôle" />
+            </columns>
+        </TableView>
+        <TextField fx:id="Recherche_User" layoutX="30.0" layoutY="379.0" prefWidth="540.0" promptText="Recherche..." />
+        <Button layoutX="120.0" layoutY="379.0" mnemonicParsing="false" onAction="#ajouterAction" prefWidth="75.0" text="Ajouter" />
+        <Button layoutX="30.0" layoutY="379.0" mnemonicParsing="false" onAction="#refresh" prefWidth="75.0" text="Rafraîchir" />
+        <Button layoutX="120.0" layoutY="379.0" mnemonicParsing="false" onAction="#SupprimerUser" prefWidth="75.0" text="Supprimer" />
+        <Button layoutX="210.0" layoutY="379.0" mnemonicParsing="false" onAction="#ModifierUser" prefWidth="75.0" text="Modifier" />
+      <Button layoutX="314.0" layoutY="379.0" mnemonicParsing="false" onAction="#ajout" prefWidth="75.0" text="add" />
+    </children>
+</AnchorPane>

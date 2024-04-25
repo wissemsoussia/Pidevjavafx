@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane stylesheets="@./css/UserStyle.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AjouterUserController">
+   <VBox alignment="CENTER" prefWidth="600" prefHeight="400">
+      <Label style="-fx-font-size: 40px; -fx-font-weight: bold; -fx-text-fill: #2ca772" text="r" />
+      <VBox>
+         <Label text="Nom:" />
+         <TextField fx:id="txtNom" promptText="Entrez votre Nom" />
+      </VBox>
+      <VBox>
+         <Label text="Date de Naissance:" />
+         <DatePicker fx:id="datePicker" />
+      </VBox>
+      <VBox>
+         <Label text="Email:" />
+         <TextField fx:id="emailField" promptText="Entrez votre Email" />
+      </VBox>
+      <VBox>
+         <Label text="Mot de Passe:" />
+         <TextField fx:id="passwordField" promptText="Entrez votre Mot de Passe" />
+      </VBox>
+      <VBox>
+         <Label text="Prénom:" />
+         <TextField fx:id="prenomField" promptText="Entrez votre Prénom" />
+      </VBox>
+      <VBox>
+         <Label text="Numéro de Téléphone:" />
+         <TextField fx:id="numField" promptText="Entrez votre Numéro de Téléphone" />
+      </VBox>
+      <ButtonBar prefWidth="288.0">
+         <buttons>
+            <Button fx:id="back" onAction="#goToLogin" prefWidth="163.0" styleClass="back-button" text="Back" />
+         </buttons>
+         <buttons>
+            <Button fx:id="ajouterButton" onAction="#ajouterAction" prefWidth="163.0" styleClass="next-button" text="Ajouter" />
+         </buttons>
+      </ButtonBar>
+   </VBox>
+</AnchorPane>

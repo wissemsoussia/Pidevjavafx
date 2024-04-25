@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.14-internal" stylesheets="@../Css/BackUserStyle.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ultime_pidev.Controllers.ListerUsersController">
+    <children>
+
+        <AnchorPane layoutY="-70.0" translateY="70.0">
+            <VBox>
+                <HBox prefHeight="50" prefWidth="1102.0" style="-fx-background-color:linear-gradient(to bottom right, #2d658c, #2ca772); -fx-border-color: white">
+                    <VBox spacing="2">
+                        <Label styleClass="back-label" text="Search :" />
+                        <StackPane>
+                            <TextField fx:id="searchField" prefHeight="25.0" prefWidth="200.0" promptText="Search with name" styleClass="back-input">
+                                <StackPane.margin>
+                                    <Insets left="25" /> <!-- Adjust the margin as needed -->
+                                </StackPane.margin>
+                            </TextField>
+                            <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                                <Image url="@../Images/search.png" />
+                            </ImageView>
+                        </StackPane>
+                        <HBox.margin>
+                            <Insets bottom="8" left="50" />
+                        </HBox.margin>
+                    </VBox>
+
+                    <HBox spacing="10">
+                        <ImageView fitHeight="25" fitWidth="25" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                            <Image url="@../Images/profil.png" />
+                        </ImageView>
+                        <ImageView fitHeight="25" fitWidth="25" style="-fx-cursor: hand" onMouseClicked="#Signout" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER_LEFT">
+                            <Image url="@../Images/signout.png" />
+                        </ImageView>
+                        <HBox.margin>
+                            <Insets left="700" top="20" />
+                        </HBox.margin>
+                    </HBox>
+                </HBox>
+
+                <HBox layoutX="70" layoutY="70.0" prefHeight="97.0" prefWidth="920.0" spacing="40">
+                    <VBox prefHeight="120" prefWidth="200" styleClass="vbox-backgroundselect">
+
+                        <HBox>
+                            <VBox spacing="5">
+                                <Label style="-fx-font-size: 18" text="All Users" textFill="white" />
+                                <Label  fx:id="allusertext" style="-fx-font-size: 15"  textFill="white" />
+                            </VBox>
+                            <ImageView fitHeight="49.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@../Images/alluser.png" />
+                                <HBox.margin>
+                                    <Insets left="50.0" />
+                                </HBox.margin>
+                            </ImageView>
+                        </HBox>
+
+                    </VBox>
+                    <VBox prefHeight="150" prefWidth="200" styleClass="vbox-backgroundnotselect">
+                        <VBox>
+                            <HBox>
+                                <VBox spacing="10">
+                                    <Label text="All Patients" textFill="black" />
+                                    <Label  fx:id="allpatienttext" textFill="black" />
+                                </VBox>
+                                <ImageView fitHeight="49.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@../Images/allpatient.png" />
+                                    <HBox.margin>
+                                        <Insets bottom="3" left="50.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </HBox>
+                            <!--                        <Button onAction="#Registerpass" style="-fx-background-color: #fff; -fx-background-radius: 10px; -fx-border-color: #2ca772;-fx-border-radius: 10px; -fx-pref-width: 180px" text="add Patient" />-->
+                        </VBox>
+                    </VBox>
+                    <VBox prefHeight="130" prefWidth="200" styleClass="vbox-backgroundnotselect">
+                        <VBox>
+                            <HBox>
+                                <VBox spacing="10">
+                                    <Label text="All Doctor" textFill="black" />
+                                    <Label  fx:id="alldocotrtext" textFill="black" />
+                                </VBox>
+                                <ImageView fitHeight="49.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@../Images/allùedecin.png" />
+                                    <HBox.margin>
+                                        <Insets bottom="3" left="50.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </HBox>
+                            <!--                        <Button onAction="#Registerpass" style="-fx-background-color: #fff; -fx-background-radius: 10px; -fx-border-color: #2ca772;-fx-border-radius: 10px; -fx-pref-width: 180px" text="add Doctor" />-->
+                        </VBox>
+                    </VBox>
+                    <VBox prefHeight="130" prefWidth="200" styleClass="vbox-backgroundnotselect">
+                        <VBox>
+                            <HBox>
+                                <VBox spacing="10">
+                                    <Label text="All Exprets" textFill="black" />
+                                    <Label  fx:id="allexperttext" textFill="black" />
+                                </VBox>
+                                <ImageView fitHeight="49.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                    <Image url="@../Images/allexpert.png" />
+                                    <HBox.margin>
+                                        <Insets bottom="3" left="50.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </HBox>
+                            <Button onMouseClicked="#ajouterExpert" style="-fx-background-color: #fff; -fx-background-radius: 10px; -fx-border-color: #2ca772;-fx-border-radius: 10px; -fx-pref-width: 180px" text="add Expert" />
+                        </VBox>
+                    </VBox>
+                    <VBox.margin>
+                        <Insets top="20" left="20"/>
+                    </VBox.margin>
+                </HBox>
+                <Label layoutX="22.0"  style="-fx-font-size: 25" text="All Users" textFill="#2ca772" >
+                    <VBox.margin>
+                        <Insets top="20" left="20"/>
+                    </VBox.margin>
+                </Label>
+                <TableView fx:id="tableUser"  prefHeight="329.0" prefWidth="1000.0" >
+                    <columns>
+                        <TableColumn fx:id="col_id" prefWidth="30.0" text="ID"/>
+                        <TableColumn fx:id="col_nom" prefWidth="86.0" text="Nom"/>
+                        <TableColumn fx:id="col_prenom" prefWidth="78.0" text="Prénom"/>
+                        <TableColumn fx:id="col_email" prefWidth="119.0" text="Email"/>
+                        <TableColumn fx:id="col_numtel" prefWidth="81.0" text="Numéro tel"/>
+                        <TableColumn fx:id="col_role" prefWidth="69.0" text="Rôle"/>
+                        <TableColumn fx:id="col_date" prefWidth="93.0" text="Date cnaissance"/>
+                        <TableColumn fx:id="col_des" prefWidth="79.199951171875" text="Status"/>
+
+                    </columns>
+                    <VBox.margin>
+                        <Insets top="20" left="20"/>
+                    </VBox.margin>
+                </TableView>
+            </VBox>
+        </AnchorPane>
+    </children>
+</AnchorPane>

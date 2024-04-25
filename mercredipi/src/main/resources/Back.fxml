@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BackController">
+   <children>
+      <ImageView fx:id="ImageP" />
+      <Button fx:id="Voyage" layoutX="123.0" layoutY="165.0" mnemonicParsing="false" text="Voyage" />
+      <Button fx:id="ReserverVoyage" layoutX="216.0" layoutY="165.0" mnemonicParsing="false" text="Reserver Voyage" />
+      <Button fx:id="Post" layoutX="334.0" layoutY="165.0" mnemonicParsing="false" text="Post" />
+      <Button fx:id="Fermer" layoutX="650.0" layoutY="10.0" mnemonicParsing="false" onAction="#exit" text="Fermer" />
+      <Button fx:id="Gestion_User" layoutX="433.0" layoutY="165.0" mnemonicParsing="false" onAction="#Gestion_User" text="Gestion User" />
+   </children>
+</AnchorPane>

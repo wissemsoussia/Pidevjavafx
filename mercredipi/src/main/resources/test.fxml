@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" fx:controller="controllers.userController">
+    <children>
+        <TableView fx:id="tableviewUser" layoutX="32.0" layoutY="14.0" prefHeight="375.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="colid" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colNom" prefWidth="75.0" text="Nom" />
+                <TableColumn fx:id="colPrenom" prefWidth="75.0" text="Prénom" />
+                <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="colDateNaissance" prefWidth="75.0" text="Date de Naissance" />
+                <TableColumn fx:id="colNumeroTelephone" prefWidth="75.0" text="Numéro de Téléphone" />
+                <TableColumn fx:id="colRole" prefWidth="75.0" text="Rôle" />
+            </columns>
+        </TableView>
+        <Label layoutX="32.0" layoutY="402.0" text="Nom :" />
+        <Label layoutX="32.0" layoutY="437.0" text="Prénom :" />
+        <Label layoutX="32.0" layoutY="469.0" text="Email :" />
+        <Label fx:id="labelNom" layoutX="128.0" layoutY="402.0" />
+        <Label fx:id="labelPrenom" layoutX="128.0" layoutY="437.0" />
+        <Label fx:id="labelEmail" layoutX="128.0" layoutY="469.0" />
+        <Button layoutX="488.0" layoutY="402.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
+        <Button layoutX="488.0" layoutY="437.0" mnemonicParsing="false" onAction="#SupprimerUser" text="Supprimer" />
+        <Button layoutX="488.0" layoutY="469.0" mnemonicParsing="false" onAction="#ModifierUser" text="Modifier" />
+    </children>
+</AnchorPane>
