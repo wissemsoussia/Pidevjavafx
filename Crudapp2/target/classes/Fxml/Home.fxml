@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" styleClass="anchor" stylesheets="@../css/Homestyles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.melocode.crudapp2.HomeController">
+   <children>
+      <VBox layoutX="1203.0" prefHeight="720.0" prefWidth="77.0" styleClass="vbux2" stylesheets="@../css/Homestyles.css" />
+      <Button fx:id="btnNewWindow" layoutX="1219.0" layoutY="114.0" mnemonicParsing="false" onAction="#HandleBtnNewWindow" stylesheets="@../css/Homestyles.css">
+         <styleClass>
+            <String fx:value="circlular-javafx-button" />
+            <String fx:value="addbutton" />
+         </styleClass></Button>
+      <Button fx:id="btnNewWindow2" layoutX="1219.0" layoutY="192.0" mnemonicParsing="false" onAction="#HandleBtnNewWindow2" styleClass="circlular-javafx-button" stylesheets="@../css/Homestyles.css" />
+      <VBox layoutX="14.0" layoutY="23.0" prefHeight="183.0" prefWidth="187.0" styleClass="borderbane" stylesheets="@../css/Homestyles.css" />
+   </children>
+</AnchorPane>

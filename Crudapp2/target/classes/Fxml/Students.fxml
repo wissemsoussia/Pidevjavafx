@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="848.0" prefWidth="1236.0" styleClass="form_container" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.melocode.crudapp2.StudentController">
+    <children>
+        <VBox layoutX="14.0" layoutY="274.0" prefHeight="300.0" prefWidth="400.0" spacing="20.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="274.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title" />
+                <TextField fx:id="tFTitle" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+                <TextField fx:id="tDescription" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                <TextField fx:id="tText" />
+            </children>
+        </VBox>
+        <Text layoutX="14.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter" wrappingWidth="177.13671875" />
+        <ButtonBar layoutX="-24.0" layoutY="595.0" prefHeight="40.0" prefWidth="476.0">
+            <buttons>
+                <Button fx:id="btnSave" mnemonicParsing="false" onAction="#createPost" text="Save" />
+                <Button fx:id="btnUpdate" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#updatePost" text="Update" />
+                <Button fx:id="btnDelete" layoutX="384.0" layoutY="18.0" mnemonicParsing="false" onAction="#deletePost" text="Delete" />
+                <Button fx:id="btnClear" layoutX="384.0" layoutY="18.0" mnemonicParsing="false" onAction="#clearPost" text="Clear" />
+            </buttons>
+        </ButtonBar>
+        <TableView fx:id="table" layoutX="567.0" layoutY="270.0" onMouseClicked="#getData" prefHeight="308.0" prefWidth="521.0">
+            <columns>
+                <TableColumn fx:id="colid" prefWidth="109.0" text="ID" />
+                <TableColumn fx:id="colTitle" minWidth="0.0" prefWidth="111.0" text="Title" />
+            <TableColumn fx:id="colDescription" minWidth="0.0" prefWidth="123.0" text="Description" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
