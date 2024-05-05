@@ -2,6 +2,13 @@ module com.example.pidev {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires com.google.zxing;
+    requires com.google.zxing.javase;
+    requires java.datatransfer;
+    requires java.desktop;
+    requires org.apache.poi.poi;
+    requires org.controlsfx.controls;
+
 
     opens com.example.pidev to javafx.fxml;
     opens com.example.pidev.entities to javafx.fxml;

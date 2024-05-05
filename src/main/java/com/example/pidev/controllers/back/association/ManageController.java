@@ -85,19 +85,19 @@ public class ManageController implements Initializable {
 
             if (currentAssociation == null) {
                 if (AssociationService.getInstance().add(association)) {
-                    AlertUtils.makeSuccessNotification("Association ajouté avec succés");
+                    AlertUtils.makeSuccessNotificationApi("Association ajouté avec succés");
                     MainWindowController.getInstance().loadInterface(Constants.FXML_BACK_DISPLAY_ALL_ASSOCIATION);
                 } else {
-                    AlertUtils.makeError("Error");
+                    AlertUtils.makeErrorApi("Error");
                 }
             } else {
                 association.setId(currentAssociation.getId());
                 if (AssociationService.getInstance().edit(association)) {
-                    AlertUtils.makeSuccessNotification("Association modifié avec succés");
+                    AlertUtils.makeSuccessNotificationApi("Association modifié avec succés");
                     ShowAllController.currentAssociation = null;
                     MainWindowController.getInstance().loadInterface(Constants.FXML_BACK_DISPLAY_ALL_ASSOCIATION);
                 } else {
-                    AlertUtils.makeError("Error");
+                    AlertUtils.makeErrorApi("Error");
                 }
             }
 
@@ -109,46 +109,46 @@ public class ManageController implements Initializable {
 
 
         if (nomTF.getText().isEmpty()) {
-            AlertUtils.makeInformation("Le champ nom ne doit pas être vide.");
+            AlertUtils.makeInformationApi("Le champ nom ne doit pas être vide.");
             return false;
         } else if (!nomTF.getText().matches("[a-zA-Z]+")) {
-            AlertUtils.makeInformation("Le champ nom ne doit contenir que des caractères alphabétiques.");
+            AlertUtils.makeInformationApi("Le champ nom ne doit contenir que des caractères alphabétiques.");
             return false;
         }
 
 
 
         if (descriptionTF.getText().isEmpty()) {
-            AlertUtils.makeInformation("description ne doit pas etre vide");
+            AlertUtils.makeInformationApi("description ne doit pas etre vide");
             return false;
         }
 
 
         if (adresseTF.getText().isEmpty()) {
-            AlertUtils.makeInformation("adresse ne doit pas etre vide");
+            AlertUtils.makeInformationApi("adresse ne doit pas etre vide");
             return false;
         }
 
 
         if (emailTF.getText().isEmpty()) {
-            AlertUtils.makeInformation("email ne doit pas etre vide");
+            AlertUtils.makeInformationApi("email ne doit pas etre vide");
             return false;
         }
         if (!Pattern.compile("^(.+)@(.+)$").matcher(emailTF.getText()).matches()) {
-            AlertUtils.makeInformation("Email invalide");
+            AlertUtils.makeInformationApi("Email invalide");
             return false;
         }
 
 
         if (numeroTelephoneTF.getText().length() != 8) {
-            AlertUtils.makeInformation("telephone doit avoir 8 chiffres");
+            AlertUtils.makeInformationApi("telephone doit avoir 8 chiffres");
             return false;
         }
 
 
 
         if (dateCreationDP.getValue() == null) {
-            AlertUtils.makeInformation("Choisir une date pour dateCreation");
+            AlertUtils.makeInformationApi("Choisir une date pour dateCreation");
             return false;
         }
 

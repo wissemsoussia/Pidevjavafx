@@ -84,7 +84,7 @@ public class MainWindowController implements Initializable {
 
     @FXML
     private void afficherAssociations(ActionEvent ignored) {
-        goToLink(Constants.FXML_FRONT_DISPLAY_ALL_ASSOCIATION);
+        loadInterface(Constants.FXML_FRONT_DISPLAY_ALL_ASSOCIATION);
 
         btnAssociations.setTextFill(COLOR_PRIMARY);
         Animations.animateButton(btnAssociations, COLOR_GRAY, Color.WHITE, COLOR_PRIMARY, 0, false);

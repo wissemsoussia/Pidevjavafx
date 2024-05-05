@@ -116,7 +116,7 @@ public class ShowAllController implements Initializable {
                 if (SponsorService.getInstance().delete(sponsor.getId())) {
                     MainWindowController.getInstance().loadInterface(Constants.FXML_BACK_DISPLAY_ALL_SPONSOR);
                 } else {
-                    AlertUtils.makeError("Could not delete sponsor");
+                    AlertUtils.makeErrorApi("Could not delete sponsor");
                 }
             }
         }

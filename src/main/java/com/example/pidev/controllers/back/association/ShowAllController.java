@@ -14,14 +14,27 @@ import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFFont;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
 
+import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 import java.util.*;
 
 public class ShowAllController implements Initializable {
@@ -34,6 +47,8 @@ public class ShowAllController implements Initializable {
     public Button addButton;
     @FXML
     public VBox mainVBox;
+    @FXML
+    private TextField searchField;
 
 
     List<Association> listAssociation;
@@ -42,19 +57,19 @@ public class ShowAllController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         listAssociation = AssociationService.getInstance().getAll();
 
-        displayData();
+        displayData("");
     }
 
-    void displayData() {
+    void displayData(String searchText) {
         mainVBox.getChildren().clear();
 
         Collections.reverse(listAssociation);
 
         if (!listAssociation.isEmpty()) {
             for (Association association : listAssociation) {
-
-                mainVBox.getChildren().add(makeAssociationModel(association));
-
+                if (searchText.isEmpty() || association.getNom().toLowerCase().contains(searchText.toLowerCase())) {
+                    mainVBox.getChildren().add(makeAssociationModel(association));
+                }
             }
         } else {
             StackPane stackPane = new StackPane();
@@ -66,7 +81,7 @@ public class ShowAllController implements Initializable {
     }
 
     public Parent makeAssociationModel(
-        Association association
+            Association association
     ) {
         Parent parent = null;
         try {
@@ -110,11 +125,109 @@ public class ShowAllController implements Initializable {
                 if (AssociationService.getInstance().delete(association.getId())) {
                     MainWindowController.getInstance().loadInterface(Constants.FXML_BACK_DISPLAY_ALL_ASSOCIATION);
                 } else {
-                    AlertUtils.makeError("Could not delete association");
+                    AlertUtils.makeErrorApi("Could not delete association");
                 }
             }
         }
     }
+
+    @FXML
+    private void searchAssociations(KeyEvent event) {
+        displayData(searchField.getText());
+    }
+
+    public void generateExcel(ActionEvent ignored) {
+        String fileName = "association.xls";
+
+        HSSFWorkbook workbook = new HSSFWorkbook();
+
+        try {
+            // Créer un objet createHelper pour formater les données de cellule
+            CreationHelper createHelper = workbook.getCreationHelper();
+
+            // Créer une police de caractères pour les cellules
+            HSSFFont font = workbook.createFont();
+            font.setFontName("Arial");
+            font.setFontHeightInPoints((short) 12);
+            font.setBold(true);
+
+            FileChooser chooser = new FileChooser();
+            // Set extension filter
+            FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Excel Files(.xls)", ".xls");
+            chooser.getExtensionFilters().add(filter);
+
+            HSSFSheet workSheet = workbook.createSheet("Associations");
+
+            // Ajuster la largeur de toutes les colonnes
+            int columnCount = 7; // Nombre total de colonnes
+            int defaultColumnWidthInChars = 25; // Largeur par défaut de la colonne en caractères
+
+            for (int i = 0; i < columnCount; i++) {
+                workSheet.setColumnWidth(i, (defaultColumnWidthInChars + 1) * 256);
+            }
+
+            // Créer un style pour les en-têtes de colonne
+            HSSFCellStyle headerCellStyle = workbook.createCellStyle();
+            headerCellStyle.setAlignment(HorizontalAlignment.CENTER);
+            headerCellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
+            headerCellStyle.setBorderBottom(BorderStyle.THIN);
+            headerCellStyle.setBorderTop(BorderStyle.THIN);
+            headerCellStyle.setBorderLeft(BorderStyle.THIN);
+            headerCellStyle.setBorderRight(BorderStyle.THIN);
+            headerCellStyle.setWrapText(true);
+            headerCellStyle.setFillForegroundColor(IndexedColors.LIGHT_BLUE.getIndex());
+            headerCellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+            headerCellStyle.setFont(font);
+
+            // Créer un style pour les données
+            HSSFCellStyle dataCellStyle = workbook.createCellStyle();
+            dataCellStyle.setAlignment(HorizontalAlignment.LEFT);
+            dataCellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
+            dataCellStyle.setBorderBottom(BorderStyle.THIN);
+            dataCellStyle.setBorderTop(BorderStyle.THIN);
+            dataCellStyle.setBorderLeft(BorderStyle.THIN);
+            dataCellStyle.setBorderRight(BorderStyle.THIN);
+            dataCellStyle.setWrapText(true);
+            dataCellStyle.setFillForegroundColor(IndexedColors.WHITE.getIndex());
+            dataCellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+            dataCellStyle.setFont(font);
+
+            // Créer les en-têtes de colonne
+            Row headerRow = workSheet.createRow(0);
+            String[] headers = {"Id", "Nom", "Description", "Adresse", "Email", "Numero de telephone", "Date de creation"};
+            for (int i = 0; i < headers.length; i++) {
+                Cell cell = headerRow.createCell(i);
+                cell.setCellValue(headers[i]);
+                cell.setCellStyle(headerCellStyle);
+            }
+
+            // Remplir les données
+            int rowNum = 1;
+            for (Association association : listAssociation) {
+                Row row = workSheet.createRow(rowNum++);
+
+                row.createCell(0).setCellValue(association.getId());
+                row.createCell(1).setCellValue(association.getNom());
+                row.createCell(2).setCellValue(association.getDescription());
+                row.createCell(3).setCellValue(association.getAdresse());
+                row.createCell(4).setCellValue(association.getEmail());
+                row.createCell(5).setCellValue(association.getNumeroTelephone());
+                row.createCell(6).setCellValue(association.getDateCreation().toString());
+
+                // Appliquer le style de cellule aux données
+                for (int i = 0; i < headers.length; i++) {
+                    row.getCell(i).setCellStyle(dataCellStyle);
+                }
+            }
+
+            workbook.write(Files.newOutputStream(Paths.get(fileName)));
+            Desktop.getDesktop().open(new File(fileName));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 }

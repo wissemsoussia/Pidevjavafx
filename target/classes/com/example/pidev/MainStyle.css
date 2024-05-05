@@ -192,3 +192,13 @@
 .background-white {
     -fx-background-color: white;
 }
+/* Styles spécifiques pour Excel */
+.excel-header {
+    background-color: #337ab7;
+    color: white;
+    font-weight: bold;
+}
+
+.excel-cell {
+    background-color: #f2f2f2;
+}
