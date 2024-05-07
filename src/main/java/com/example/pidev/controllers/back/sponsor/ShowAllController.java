@@ -2,7 +2,7 @@ package com.example.pidev.controllers.back.sponsor;
 
 import com.example.pidev.controllers.back.MainWindowController;
 import com.example.pidev.entities.Sponsor;
-import com.example.pidev.services.SponsorService;
+import services.SponsorService;
 import com.example.pidev.utils.AlertUtils;
 import com.example.pidev.utils.Constants;
 import javafx.event.ActionEvent;

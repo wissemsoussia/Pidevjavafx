@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1420.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.userController">
+    <children>
+        <Button layoutX="648.0" layoutY="333.0" mnemonicParsing="false" onAction="#SupprimerUser" prefHeight="26.0" prefWidth="118.0" text="Supprimer" textFill="SALMON">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="74.0" prefWidth="1533.0" style="-fx-background-color: #fa8072;">
+         <children>
+            <StackPane prefHeight="70.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fx:id="topText" boundsType="LOGICAL_VERTICAL_CENTER" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Mon profil" textAlignment="JUSTIFY" textOrigin="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="23.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <Button layoutX="1314.0" layoutY="16.0" mnemonicParsing="false" onAction="#ModifierUser" prefHeight="38.0" prefWidth="127.0" text="Modifier" textFill="SALMON">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="10.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" pannable="true" style="-fx-background-color: transparent;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <content>
+            <AnchorPane stylesheets="@../../MainStyle.css">
+               <children>
+                  <AnchorPane layoutX="30.0" layoutY="30.0" style="-fx-background-color: white;" styleClass="window-rounded" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#00000033" height="50.0" radius="24.5" width="50.0" />
+                     </effect>
+                     <children>
+                        <VBox layoutX="7.0" layoutY="-24.0" prefHeight="266.0" prefWidth="577.0" AnchorPane.bottomAnchor="-36.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="-23.0" AnchorPane.topAnchor="-24.0">
+                           <children>
+                              <HBox>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <VBox prefHeight="158.0" prefWidth="454.0" spacing="10.0" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Text fx:id="emailText" text="Email" wrappingWidth="43.599998474121094">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Text>
+                                            <Label fx:id="labelNom" prefHeight="18.0" prefWidth="135.0" />
+                                          <Text fx:id="lastnameText" text="Nom " wrappingWidth="46.799949645996094">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Text>
+                                            <Label fx:id="labelPrenom" prefHeight="18.0" prefWidth="153.0" />
+                                          <Text fx:id="statusText" text="Prénom " wrappingWidth="69.1999740600586">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Text>
+                                          <Label fx:id="labelEmail" prefHeight="18.0" prefWidth="178.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="648.0" layoutY="284.0" mnemonicParsing="false" onAction="#deconnexion" prefHeight="26.0" prefWidth="118.0" text="Déconnexion" textFill="SALMON">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

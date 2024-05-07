@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 avr. 2022, 02:26:45
+    Author     : ASUS
+*/
+.login-bg{
+    
+    -fx-background-color:linear-gradient(to bottom right,#2f466b,#662d60);
+}
+.exit{
+    -fx-background-color:#c22c40;
+    -fx-background-radius:5px;
+    -fx-cursor:hand;
+}
+.textfield-design{
+    -fx-background-color:transparent;
+    -fx-background-radius:10px;
+    -fx-border-color:linear-gradient(to bottom right,#2f466b,#662d60);
+    -fx-border-radius:10px;
+    -fx-text-inner-color:#000;
+}
+.button-design{
+     -fx-background-color:linear-gradient(to bottom right,#2f466b,#662d60);
+     -fx-background-radius:20px;
+      -fx-cursor:hand;
+     
+}
+.button-design:hover{
+     -fx-background-color:linear-gradient(to bottom left,#517ab5,#ae44a5);
+     -fx-background-radius:20px;
+      -fx-cursor:hand;
+     
+}
+.hypertext-design{
+    -fx-text-fill:#5185c5;
+    -fx-underline:false;
+    -fx-border-color:transparent;
+}
+.hypertext-design:hover{
+    
+    -fx-underline:true;
+    
+}
+
+/* styles.css */
+
+/* Set background color */
+.root {
+    -fx-background-color: #40E0D0; /* Turquoise */
+}
+
+/* Style for TextField */
+.text-field {
+    -fx-background-color: #FFFFFF; /* White */
+    -fx-text-fill: #000000; /* Black */
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #A9A9A9; /* Dark gray */
+}
+
+/* Style for Label */
+.label {
+    -fx-text-fill: #000000; /* Black */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Style for Button */
+.button {
+    -fx-background-color: #000000; /* Black */
+    -fx-text-fill: #FFFFFF; /* White */
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+/* Style for TableView */
+.table-view {
+    -fx-background-color: #FFFFFF; /* White */
+}
+
+/* Style for fullscreenWindow */
+.fullscreen-window {
+    -fx-background-color: #FFFFFF; /* Turquoise #40E0D0 */
+}
+
+/* Style for mainTitle */
+.main-title {
+    -fx-text-fill: #FFFFFF; /* White */
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+/* Style for Hyperlink */
+.hyperlink {
+    -fx-text-fill: #0095ff; /* Yellow */
+    -fx-underline: true;
+}
+
+/* styles.css */
+
+/* Style for TextField to make it appear like a label */
+.text-field-no-border {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-text-fill: transparent; /* Black text color */
+    -fx-border-width: 0; /* No border */
+}

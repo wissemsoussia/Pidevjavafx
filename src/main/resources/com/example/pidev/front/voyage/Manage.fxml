@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="background-white" stylesheets="@../../MainStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pidev.controllers.front.voyage.ManageController">
+    <StackPane layoutY="30.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <Text fx:id="topText" strokeType="OUTSIDE" strokeWidth="0.0" text="texte haut">
+            <font>
+                <Font name="Arial Bold" size="23.0" />
+            </font>
+        </Text>
+    </StackPane>
+    <VBox layoutX="50.0" layoutY="80.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+
+        <HBox>
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VilleDepart :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="villeDepartTF" alignment="TOP_LEFT" promptText="Saisir villeDepart" styleClass="form-control" />
+            </VBox>
+
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Destination :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="destinationTF" alignment="TOP_LEFT" promptText="Saisir destination" styleClass="form-control" />
+            </VBox>
+
+        </HBox>
+
+        <HBox>
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HeureDepart :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="heureDepartTF" alignment="TOP_LEFT" promptText=" Saisir heureDepart (HH:MM)" styleClass="form-control" />
+            </VBox>
+
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HeureArrivee :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="heureArriveeTF" alignment="TOP_LEFT" promptText="Saisir heureArrivee (HH:MM)" styleClass="form-control" />
+            </VBox>
+
+        </HBox>
+
+        <HBox>
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TypeVoyage :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="typeVoyageTF" alignment="TOP_LEFT" promptText="Saisir typeVoyage ( traditionnel / volontaire)" styleClass="form-control" />
+            </VBox>
+
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="typeTF" alignment="TOP_LEFT" promptText="Saisir type ( en solo / en groupe)" styleClass="form-control" />
+            </VBox>
+
+        </HBox>
+
+        <HBox>
+
+            <VBox spacing="10.0" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Activites :">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </Text>
+                <TextField fx:id="activitesTF" alignment="TOP_LEFT" promptText="Saisir activites ( Distribution alimentaire /Enseignement bénévole/Soins médicaux/Sensibilisation environnement/Mentorat jeunes/Assistance handicapés ) " styleClass="form-control" />
+            </VBox>
+
+
+        </HBox>
+
+
+    </VBox>
+    <Button fx:id="btnAjout" layoutX="254.0" layoutY="386.0" mnemonicParsing="false" onAction="#manage" prefHeight="51.0" prefWidth="150.0" styleClass="success-button" text="ajouter" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="59.60000000000002" AnchorPane.leftAnchor="254.0" AnchorPane.rightAnchor="266.0" />
+</AnchorPane>

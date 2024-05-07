@@ -1,0 +1,74 @@
+.back-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #333;
+    -fx-font-family: "Ubuntu";
+    -fx-font-weight: normal;
+}
+.back-input {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-font-size: 15px;
+    -fx-pref-height: 15px;
+    -fx-background-radius: 15px;
+    -fx-border-color: #0ba164;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1.2);
+}
+
+
+
+.vbox-backgroundnotselect {
+    -fx-background-color: #ffff;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 0px 0px 10px;
+    -fx-border-color:#2ca772 ;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+.vbox-backgroundselect {
+    -fx-background-color: linear-gradient(to bottom, #2ca772, #4dbf89);
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 0px 0px 10px;
+    -fx-border-radius: 10px;
+
+}
+
+
+.table-view {
+    -fx-background-color: #f0f0f0; /* Background color of the table view */
+}
+
+.table-column {
+    -fx-alignment: CENTER_LEFT; /* Align column content to the left */
+}
+
+.table-column-header {
+    -fx-background-color: #2ca772; /* Background color of column headers */
+    -fx-text-fill: white; /* Text color of column headers */
+}
+.login-input {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-pref-height: 20px;
+    -fx-background-radius: 15px;
+    -fx-border-color: #0ba164;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1.2);
+}
+.table-cell {
+    -fx-border-color: #e0e0e0; /* Border color of table cells */
+}
+
+/* Style for specific columns */
+#col_id, #col_nom, #col_prenom, #col_genre, #col_email, #col_numtel, #col_role, #col_pays, #col_date, #col_rate, #col_des, #col_exp {
+    -fx-text-fill: black; /* Text color for all columns */
+}
+
+#col_rate, #col_des, #col_exp {
+    -fx-alignment: CENTER; /* Align content to the center for specific columns */
+}

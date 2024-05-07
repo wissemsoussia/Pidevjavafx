@@ -36,9 +36,15 @@ public class MainWindowController implements Initializable {
     private AnchorPane content;
 
     @FXML
+    private Button btnProfilBack;
+    @FXML
     private Button btnSponsors;
     @FXML
     private Button btnAssociations;
+    @FXML
+    private Button btnVoyages;
+    @FXML
+    private Button btnReservations;
 
     public static MainWindowController getInstance() {
         if (instance == null) {
@@ -52,8 +58,11 @@ public class MainWindowController implements Initializable {
         staticContent = content;
 
         liens = new Button[]{
-            btnSponsors,
-            btnAssociations,
+                btnSponsors,
+                btnAssociations,
+                btnProfilBack,
+                btnVoyages,
+                btnReservations,
         };
 
         for (Button lien : liens) {
@@ -61,13 +70,18 @@ public class MainWindowController implements Initializable {
             lien.setBackground(new Background(new BackgroundFill(COLOR_PRIMARY, CornerRadii.EMPTY, Insets.EMPTY)));
             Animations.animateButton(lien, COLOR_GRAY, Color.WHITE, COLOR_PRIMARY, 0, false);
         }
-        btnSponsors.setTextFill(Color.WHITE);
-        btnAssociations.setTextFill(Color.WHITE);
-
 
         loadInterface(Constants.FXML_BACK_HOME);
     }
 
+
+    @FXML
+    private void afficherUsers(ActionEvent ignored) {
+        goToLink(Constants.FXML_BACK_PROFILE);
+
+        btnSponsors.setTextFill(COLOR_PRIMARY);
+        Animations.animateButton(btnSponsors, COLOR_GRAY, Color.WHITE, COLOR_PRIMARY, 0, false);
+    }
 
     @FXML
     private void afficherSponsors(ActionEvent ignored) {
@@ -85,6 +99,22 @@ public class MainWindowController implements Initializable {
         Animations.animateButton(btnAssociations, COLOR_GRAY, Color.WHITE, COLOR_PRIMARY, 0, false);
     }
 
+
+    @FXML
+    private void afficherVoyages(ActionEvent ignored) {
+        goToLink(Constants.FXML_BACK_DISPLAY_ALL_VOYAGE);
+
+        btnVoyages.setTextFill(COLOR_PRIMARY);
+        Animations.animateButton(btnVoyages, COLOR_GRAY, Color.WHITE, COLOR_PRIMARY, 0, false);
+    }
+
+    @FXML
+    private void afficherReservations(ActionEvent ignored) {
+        goToLink(Constants.FXML_BACK_DISPLAY_ALL_RESERVATION);
+
+        btnReservations.setTextFill(COLOR_PRIMARY);
+        Animations.animateButton(btnReservations, COLOR_GRAY, Color.WHITE, COLOR_PRIMARY, 0, false);
+    }
 
     @FXML
     public void logout(ActionEvent ignored) {

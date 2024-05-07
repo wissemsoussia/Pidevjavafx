@@ -18,6 +18,18 @@
             </Text>
 
 
+            <Button fx:id="btnProfil" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#afficherProfil" text="Profil" textFill="WHITE">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+                <font>
+                    <Font name="Segoe UI Bold" size="15.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+
             <Button fx:id="btnSponsors" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#afficherSponsors" text="Sponsors" textFill="WHITE">
                 <HBox.margin>
                     <Insets />
@@ -41,6 +53,33 @@
                     <Cursor fx:constant="HAND" />
                 </cursor>
             </Button>
+
+
+            <Button fx:id="btnVoyages" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#afficherVoyages" text="Voyages" textFill="WHITE">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+                <font>
+                    <Font name="Segoe UI Bold" size="15.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+
+            <Button fx:id="btnReservations" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#afficherReservations" text="Reservations" textFill="WHITE">
+                <HBox.margin>
+                    <Insets />
+                </HBox.margin>
+                <font>
+                    <Font name="Segoe UI Bold" size="15.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+
+
 
         </HBox>
 

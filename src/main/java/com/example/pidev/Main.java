@@ -1,7 +1,7 @@
 package com.example.pidev;
 
 import com.example.pidev.entities.Association;
-import com.example.pidev.services.AssociationService;
+import services.AssociationService;
 
 import java.time.LocalDate;
 import java.util.List;

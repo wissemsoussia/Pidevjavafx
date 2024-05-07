@@ -2,7 +2,7 @@ package com.example.pidev.controllers.back.association;
 
 import com.example.pidev.controllers.back.MainWindowController;
 import com.example.pidev.entities.Association;
-import com.example.pidev.services.AssociationService;
+import services.AssociationService;
 import com.example.pidev.utils.AlertUtils;
 import com.example.pidev.utils.Constants;
 import javafx.event.ActionEvent;

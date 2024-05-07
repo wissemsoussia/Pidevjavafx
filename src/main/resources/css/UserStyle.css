@@ -1,0 +1,135 @@
+.login-input {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-padding: 10px;
+    -fx-font-size: 15px;
+    -fx-pref-height: 20px;
+    -fx-background-radius: 15px;
+    -fx-border-color: #0ba164;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1.2);
+}
+
+#profil {
+    -fx-radius: 27;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-stroke-width: 2;
+    -fx-stroke: #0ba164;
+}
+.nav-bar{
+    -fx-pref-height: 64px;
+    -fx-background-color:linear-gradient(to bottom right, #2d658c, #2ca772);
+}
+
+
+.custom-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #333;
+    -fx-font-family: "Ubuntu";
+    -fx-font-weight: normal;
+}
+
+.link-text {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2ca772;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.login-button {
+    -fx-background-color: #2ca772;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-family: "Ubuntu";
+    -fx-font-weight: blod;
+    -fx-font-size: 18px;
+    -fx-border: none;
+    -fx-border-radius: 15px;
+}
+
+.back-button {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-family: "Ubuntu";
+    -fx-font-weight: blod;
+    -fx-font-size: 16px;
+    -fx-border: none;
+    -fx-border-radius: 15px;
+}
+
+.choice-box {
+    -fx-pref-height: 20px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-border-color: #2ca772;
+    -fx-background-color: #ffffff;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+}
+.date-picker {
+    -fx-border-radius: 15px;
+    -fx-font-size: 15px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 15px;
+    -fx-border-color: #0ba164;
+}
+.choice-box .list-cell {
+    -fx-background-color: #2ca772;
+}
+
+.choice-box .list-cell:selected {
+    -fx-background-color: #2ca772;
+    -fx-text-fill: #ffffff;
+}
+.next-button {
+    -fx-background-color: #2ca772;
+    -fx-text-fill: white;
+    -fx-pref-width: 50px;
+    -fx-padding: 10px 20px;
+    -fx-font-family: "Ubuntu";
+    -fx-font-weight: blod;
+    -fx-font-size: 16px;
+    -fx-border: none;
+    -fx-border-radius: 15px;
+}
+
+.radio-button {
+    -fx-font-size: 13px; /* Adjust the font size */
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #ffffff;
+    -fx-mark-color: #2ca772;
+}
+
+.register-button {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2ca772;
+    -fx-font-size: 16px;
+    -fx-border: none;
+    -fx-background-radius:15px;
+    -fx-border-radius: 15px;
+}
+
+.loginh-button {
+    -fx-background-color: rgba(44, 167, 114, 0.51);
+    -fx-text-fill: #ffff;
+    -fx-font-size: 16px;
+    -fx-background-radius:15px;
+    -fx-border: none;
+    -fx-border-radius: 15px;
+}
+
+.nav-bar-text{
+    -fx-background-color: rgba(44, 167, 114, 0.37);
+    -fx-text-fill: #ffff;
+    -fx-font-size: 20px;
+    -fx-background-radius:15px;
+    -fx-border: none;
+    -fx-border-radius: 15px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 120px;
+    -fx-label-padding: 5px 10px 5px 25px;
+    -fx-cursor: hand;
+}

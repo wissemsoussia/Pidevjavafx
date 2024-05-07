@@ -1,7 +1,6 @@
 package com.example.pidev;
 
 import com.example.pidev.utils.Constants;
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
@@ -11,14 +10,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Objects;
 
-public class MainFX extends Application {
+public class MainFX {
 
     public static Stage mainStage;
     private static MainFX instance;
-
-    public static void main(String[] args) {
-        launch(args);
-    }
 
     public static MainFX getInstance() {
         if (instance == null) {
@@ -27,37 +22,30 @@ public class MainFX extends Application {
         return instance;
     }
 
-
-    @Override
-    public void start(Stage primaryStage) {
-        mainStage = primaryStage;
-        loadLogin();
-    }
-
     public void loadLogin() {
         loadScene(
-            Constants.FXML_LOGIN,
-            "Connexion",
-            1550,
-            860
+                Constants.FXML_LOGIN,
+                "Connexion",
+                1550,
+                860
         );
     }
 
     public void loadFront() {
         loadScene(
-            Constants.FXML_FRONT_MAIN_WINDOW,
-            "",
-            1550,
-            860
+                Constants.FXML_FRONT_MAIN_WINDOW,
+                "",
+                1550,
+                860
         );
     }
 
     public void loadBack() {
         loadScene(
-            Constants.FXML_BACK_MAIN_WINDOW,
-            "",
-            1550,
-            860
+                Constants.FXML_BACK_MAIN_WINDOW,
+                "",
+                1550,
+                860
         );
     }
 
