@@ -63,7 +63,8 @@
 }
 
 .success-button {
-    -fx-background-color: #E9967A;
+    -fx-background-color:  #fa8072
+;
     -fx-background-radius: 10px;
 }
 
@@ -128,7 +129,8 @@
 }
 
 .form-control:focused {
-    -fx-border-color: #E9967A;
+    -fx-border-color:  #fa8072
+;
 }
 
 .form-control-white {
@@ -141,7 +143,8 @@
 }
 
 .form-control-white:focused {
-    -fx-border-color: #E9967A;
+    -fx-border-color:  #fa8072
+;
 }
 
 .search-bar {
@@ -182,7 +185,8 @@
 }
 
 .background-blue {
-    -fx-background-color: #E9967A;
+    -fx-background-color: #fa8072
+;
 }
 
 .background-dark {

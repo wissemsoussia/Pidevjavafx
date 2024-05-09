@@ -142,31 +142,26 @@ public class ShowAllController implements Initializable {
         HSSFWorkbook workbook = new HSSFWorkbook();
 
         try {
-            // Créer un objet createHelper pour formater les données de cellule
             CreationHelper createHelper = workbook.getCreationHelper();
 
-            // Créer une police de caractères pour les cellules
             HSSFFont font = workbook.createFont();
             font.setFontName("Arial");
             font.setFontHeightInPoints((short) 12);
             font.setBold(true);
 
             FileChooser chooser = new FileChooser();
-            // Set extension filter
             FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Excel Files(.xls)", ".xls");
             chooser.getExtensionFilters().add(filter);
 
             HSSFSheet workSheet = workbook.createSheet("Associations");
 
-            // Ajuster la largeur de toutes les colonnes
-            int columnCount = 7; // Nombre total de colonnes
-            int defaultColumnWidthInChars = 25; // Largeur par défaut de la colonne en caractères
+            int columnCount = 7;
+            int defaultColumnWidthInChars = 25;
 
             for (int i = 0; i < columnCount; i++) {
                 workSheet.setColumnWidth(i, (defaultColumnWidthInChars + 1) * 256);
             }
 
-            // Créer un style pour les en-têtes de colonne
             HSSFCellStyle headerCellStyle = workbook.createCellStyle();
             headerCellStyle.setAlignment(HorizontalAlignment.CENTER);
             headerCellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
@@ -179,7 +174,6 @@ public class ShowAllController implements Initializable {
             headerCellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
             headerCellStyle.setFont(font);
 
-            // Créer un style pour les données
             HSSFCellStyle dataCellStyle = workbook.createCellStyle();
             dataCellStyle.setAlignment(HorizontalAlignment.LEFT);
             dataCellStyle.setVerticalAlignment(VerticalAlignment.CENTER);
@@ -192,7 +186,6 @@ public class ShowAllController implements Initializable {
             dataCellStyle.setFillPattern(FillPatternType.SOLID_FOREGROUND);
             dataCellStyle.setFont(font);
 
-            // Créer les en-têtes de colonne
             Row headerRow = workSheet.createRow(0);
             String[] headers = {"Id", "Nom", "Description", "Adresse", "Email", "Numero de telephone", "Date de creation"};
             for (int i = 0; i < headers.length; i++) {
@@ -201,7 +194,6 @@ public class ShowAllController implements Initializable {
                 cell.setCellStyle(headerCellStyle);
             }
 
-            // Remplir les données
             int rowNum = 1;
             for (Association association : listAssociation) {
                 Row row = workSheet.createRow(rowNum++);

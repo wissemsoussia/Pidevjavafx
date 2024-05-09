@@ -5,74 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38dbf878-c566-4655-a638-05574edd9320" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/association.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qr_code.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/association/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/association/ManageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr_code.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/qr_code.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/association/ShowAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/association/ShowAllController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/sponsor/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/sponsor/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/sponsor/ShowAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/back/sponsor/ShowAllController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/association/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/association/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/association/ShowAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/association/ShowAllController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/sponsor/ManageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/sponsor/ManageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/sponsor/ShowAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/controllers/front/sponsor/ShowAllController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/entities/Association.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/entities/Association.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/pidev/utils/AlertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/pidev/utils/AlertUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pidev/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pidev/MainStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pidev/back/association/ShowAll.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pidev/back/association/ShowAll.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pidev/front/association/Model.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pidev/front/association/Model.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/pidev/front/association/ShowAll.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/pidev/front/association/ShowAll.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/MainFX.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/MainStyle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/MainWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/association/Manage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/association/Model.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/association/ShowAll.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/sponsor/Manage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/sponsor/Model.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/back/sponsor/ShowAll.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/back/MainWindowController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/back/association/ManageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/back/association/ShowAllController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/back/sponsor/ManageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/back/sponsor/ShowAllController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/front/MainWindowController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/front/association/ManageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/front/association/ShowAllController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/front/sponsor/ManageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/controllers/front/sponsor/ShowAllController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/entities/Association.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/entities/Sponsor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/MainWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/association/Manage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/association/Model.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/association/ShowAll.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/sponsor/Manage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/sponsor/Model.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/front/sponsor/ShowAll.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/images/capture.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/images/image-placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/services/AssociationIservice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/services/AssociationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/services/SponsorIservice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/services/SponsorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/utils/AlertUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/utils/Animations$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/utils/Animations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/utils/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/pidev/utils/DatabaseConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,31 +20,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2g0IjC19hwEEKWUowKpeVWGQQaD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MainFX.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "sponsor__gestion",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ibtih/IdeaProjects/pidev - association",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainFX.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.pidev [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sponsor__gestion&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xamp/pidev - integration&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.MainFX">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.pidev.Main" />
@@ -158,6 +97,13 @@
       <option name="presentableId" value="Default" />
       <updated>1714828202128</updated>
       <workItem from="1714828204153" duration="2488000" />
+      <workItem from="1714930433091" duration="2627000" />
+      <workItem from="1715034501856" duration="855000" />
+      <workItem from="1715071098751" duration="266000" />
+      <workItem from="1715246054673" duration="45000" />
+      <workItem from="1715253165879" duration="72000" />
+      <workItem from="1715253258270" duration="102000" />
+      <workItem from="1715253456826" duration="1090000" />
     </task>
     <servers />
   </component>
